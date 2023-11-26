@@ -1,0 +1,107 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px -2px black;
+  background-color: #f7f7f5;
+  margin: 15px;
+  height: 50px;
+}
+
+.nav-logo img {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 25px;
+  width: 45px;
+  vertical-align: top;
+}
+
+.title {
+  color: #171717;
+  font-size: 38px;
+  font-weight: 600;
+  font-family: "explora", cursive;
+  margin-right: 1000px;
+}
+
+.nav-login-cart {
+  display: flex;
+  margin-top: 5px;
+  margin-right: 2px;
+  font-size: 24px;
+  gap: 5px;
+}
+
+.login {
+  font-family: "explora";
+  font-size: 25px;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-right: 35px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "explora", cursive;
+  font-size: 80px;
+  text-align: center;
+  width: 50%;
+  margin-top: 250px;
+}
+
+.title-content img {
+  width: 700px;
+  margin-left: 650px;
+  margin-top: -390px;
+}
+
+button {
+  display: inline-block;
+  padding: 3px;
+  width: 20%;
+  font-family: "explora", cursive;
+  font-size: 25px;
+  margin-left: 250px;
+  background-color: #794328;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+    margin-right: 10px;
+  }
+
+  .nav-login-cart {
+    margin-right: 5px;
+    font-size: 16px;
+    gap: 3px;
+  }
+
+  .login {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .content {
+    font-size: 32px;
+    margin-top: 30px;
+  }
+
+  .title-content img {
+    max-width: 180%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  button {
+    width: 100%;
+    font-size: 18px;
+    margin: 20px 0;
+  }
+}
