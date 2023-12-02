@@ -1,0 +1,30 @@
+.banner {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.banner-left {
+  text-align: center;
+  font-family: "explora", cursive;
+  font-size: 45px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 180px;
+}
+
+.banner-right {
+  width: 50%;
+}
+
+button {
+  padding: 3px;
+  width: 30%;
+  font-family: "explora", cursive;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: #794328;
+  border-radius: 5px;
+  margin-top: -65px;
+  margin-left: 120px;
+  color: #fff;
+}

@@ -3,8 +3,9 @@ import "./Navbar.css";
 import logo from "../Assets/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import banner from "../Assets/banner-img.svg";
+
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
@@ -17,19 +18,11 @@ const Navbar = () => {
 
         <div className="nav-login-cart">
           <FontAwesomeIcon icon={faUser} />
-          <div className="login">LogIn</div>
+          <Link to={'/login'}><div className="login">LogIn</div></Link>
           <FontAwesomeIcon icon={faShoppingCart} />
+          <div className="nav-login-cart-count">0</div>
         </div>
       </div>
-      <section className="title-content">
-        <div className="banner">
-          <div className="content">
-            Welcome to Mbao Zetu
-            <button>View Furniture</button>
-            <img src={banner} />
-          </div>
-        </div>
-      </section>
     </>
   );
 };
