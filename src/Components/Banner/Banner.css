@@ -27,4 +27,18 @@ button {
   margin-top: -65px;
   margin-left: 120px;
   color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #794328;
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .banner-left {
+    margin-top: 80px;
+  }
 }

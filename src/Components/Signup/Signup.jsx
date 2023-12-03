@@ -1,10 +1,10 @@
 import React from "react";
-import "./Login.css";
-const Login = () => {
+import "./Signup.css";
+const Signup = () => {
   return (
     <>
-      <div className="form-group">
-        <h1>Login</h1>
+      <div className="signup-group">
+        <h1>Sign Up</h1>
         <input
           type="email"
           id="email"
@@ -19,13 +19,20 @@ const Login = () => {
           placeholder="password"
           required
         />
+        <input
+          type="confirm-password"
+          id="confirm-password"
+          name="confirm-password"
+          placeholder="confrim password"
+          required
+        />
         <div className="button">
-          <button className="button">Login</button>
+          <button>Login</button>
         </div>
         <div class="bottom-text">
           <div>
             <span>
-              No account? <a href="Signup">Sign up here</a>
+              Have an account? <a href="Login">Login here</a>
             </span>
           </div>
           <div>
@@ -39,4 +46,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

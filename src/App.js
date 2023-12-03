@@ -6,6 +6,8 @@ import Product from "./Pages/Product";
 import Cartpage from "./Pages/Cartpage";
 import Homepage from "./Pages/Homepage";
 import Checkout from "./Pages/Checkout";
+import Signup from "./Components/Signup/Signup";
+import Forgotpassword from "./Components/Forgot-password/Forgotpassword";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/Login" element={<LoginSignup />} />
           <Route path="/Cartpage" element={<Cartpage />} />
           <Route path="/Checkout" element={<Checkout />} />
+          <Route path="/Signup" element={<Signup />} />
+          <Route path="/Forgotpassword" element={<Forgotpassword />} />
         </Routes>
       </BrowserRouter>
     </div>

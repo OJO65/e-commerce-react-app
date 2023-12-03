@@ -10,15 +10,18 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar">
-        <div className="nav-logo">
-          <img src={logo} />
-        </div>
-
+        <Link to={"/Homepage"}>
+          <div className="nav-logo">
+            <img src={logo} />
+          </div>
+        </Link>
         <div className="title">Mbao Zetu</div>
 
         <div className="nav-login-cart">
           <FontAwesomeIcon icon={faUser} />
-          <Link to={'/login'}><div className="login">LogIn</div></Link>
+          <Link to={"/login"}>
+            <div className="login">Log in</div>
+          </Link>
           <FontAwesomeIcon icon={faShoppingCart} />
           <div className="nav-login-cart-count">0</div>
         </div>
