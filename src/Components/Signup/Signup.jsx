@@ -27,7 +27,7 @@ const Signup = () => {
           required
         />
         <div className="button">
-          <button>Login</button>
+          <button>Sign Up</button>
         </div>
         <div class="bottom-text">
           <div>
