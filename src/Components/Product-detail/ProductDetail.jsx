@@ -62,7 +62,7 @@ const ProductDetail = () => {
                 >
                   -
                 </span>
-                <span id="counter" className="num">
+                <span id="deskChairCounter" className="num">
                   0
                 </span>
                 <span
@@ -86,13 +86,23 @@ const ProductDetail = () => {
             <div className="product">
               <img src={coffeetable} />
               <div className="wrapper">
-                <span onClick={decrease} className="minus">
+                <span
+                  onClick={() =>
+                    decrease(setCoffeeTableCounter, "coffeeTableCounter")
+                  }
+                  className="minus"
+                >
                   -
                 </span>
-                <span id="counter" className="num">
+                <span id="coffeeTableCounter" className="num">
                   0
                 </span>
-                <span onClick={increase} className="plus">
+                <span
+                  onClick={() =>
+                    increase(setCoffeeTableCounter, "coffeeTableCounter")
+                  }
+                  className="plus"
+                >
                   +
                 </span>
               </div>
@@ -108,13 +118,23 @@ const ProductDetail = () => {
             <div className="product">
               <img src={receptionchair} />
               <div className="wrapper">
-                <span onClick={decrease} className="minus">
+                <span
+                  onClick={() =>
+                    decrease(setReceptionChairCounter, "receptionChairCounter")
+                  }
+                  className="minus"
+                >
                   -
                 </span>
-                <span id="counter" className="num">
+                <span id="receptionChairCounter" className="num">
                   0
                 </span>
-                <span onClick={increase} className="plus">
+                <span
+                  onClick={() =>
+                    increase(setReceptionChairCounter, "receptionChairCounter")
+                  }
+                  className="plus"
+                >
                   +
                 </span>
               </div>
@@ -130,13 +150,23 @@ const ProductDetail = () => {
             <div className="product">
               <img src={reclinersofa} />
               <div className="wrapper">
-                <span onClick={decrease} className="minus">
+                <span
+                  onClick={() =>
+                    decrease(setReclinerSofaCounter, "reclinerSofaCounter")
+                  }
+                  className="minus"
+                >
                   -
                 </span>
-                <span id="counter" className="num">
+                <span id="reclinerSofaCounter" className="num">
                   0
                 </span>
-                <span onClick={increase} className="plus">
+                <span
+                  onClick={() =>
+                    increase(setReclinerSofaCounter, "reclinerSofaCounter")
+                  }
+                  className="plus"
+                >
                   +
                 </span>
               </div>
@@ -152,13 +182,23 @@ const ProductDetail = () => {
             <div className="product">
               <img src={schooltable} />
               <div className="wrapper">
-                <span onClick={decrease} className="minus">
+                <span
+                  onClick={() =>
+                    decrease(setSchoolTableCounter, "schoolTableCounter")
+                  }
+                  className="minus"
+                >
                   -
                 </span>
-                <span id="counter" className="num">
+                <span id="schoolTableCounter" className="num">
                   0
                 </span>
-                <span onClick={increase} className="plus">
+                <span
+                  onClick={() =>
+                    increase(setSchoolTableCounter, "schoolTableCounter")
+                  }
+                  className="plus"
+                >
                   +
                 </span>
               </div>
@@ -174,13 +214,19 @@ const ProductDetail = () => {
             <div className="product">
               <img src={chair} />
               <div className="wrapper">
-                <span onClick={decrease} className="minus">
+                <span
+                  onClick={() => decrease(setChairCounter, "chairCounter")}
+                  className="minus"
+                >
                   -
                 </span>
-                <span id="counter" className="num">
+                <span id="chairCounter" className="num">
                   0
                 </span>
-                <span onClick={increase} className="plus">
+                <span
+                  onClick={() => increase(setChairCounter, "chairCounter")}
+                  className="plus"
+                >
                   +
                 </span>
               </div>
@@ -196,13 +242,23 @@ const ProductDetail = () => {
             <div className="product">
               <img src={doublesofa} />
               <div className="wrapper">
-                <span onClick={decrease} className="minus">
+                <span
+                  onClick={() =>
+                    decrease(setDoubleSofaCounter, "doubleSofaCounter")
+                  }
+                  className="minus"
+                >
                   -
                 </span>
-                <span id="counter" className="num">
+                <span id="doubleSofaCounter" className="num">
                   0
                 </span>
-                <span onClick={increase} className="plus">
+                <span
+                  onClick={() =>
+                    increase(setDoubleSofaCounter, "doubleSofaCounter")
+                  }
+                  className="plus"
+                >
                   +
                 </span>
               </div>
@@ -218,13 +274,23 @@ const ProductDetail = () => {
             <div className="product">
               <img src={officetable} />
               <div className="wrapper">
-                <span onClick={decrease} className="minus">
+                <span
+                  onClick={() =>
+                    decrease(setOfficeTableCounter, "officeTableCounter")
+                  }
+                  className="minus"
+                >
                   -
                 </span>
-                <span id="counter" className="num">
+                <span id="officeTableCounter" className="num">
                   0
                 </span>
-                <span onClick={increase} className="plus">
+                <span
+                  onClick={() =>
+                    increase(setOfficeTableCounter, "officeTableCounter")
+                  }
+                  className="plus"
+                >
                   +
                 </span>
               </div>
@@ -240,13 +306,23 @@ const ProductDetail = () => {
             <div className="product">
               <img src={singlesofa} />
               <div className="wrapper">
-                <span onClick={decrease} className="minus">
+                <span
+                  onClick={() =>
+                    decrease(setSingleSofaCounter, "singleSofaCounter")
+                  }
+                  className="minus"
+                >
                   -
                 </span>
-                <span id="counter" className="num">
+                <span id="singleSofaCounter" className="num">
                   0
                 </span>
-                <span onClick={increase} className="plus">
+                <span
+                  onClick={() =>
+                    increase(setSingleSofaCounter, "singleSofaCounter")
+                  }
+                  className="plus"
+                >
                   +
                 </span>
               </div>
