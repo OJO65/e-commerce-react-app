@@ -22,8 +22,10 @@ const Navbar = () => {
           <Link to={"/login"}>
             <div className="login">Log in</div>
           </Link>
-          <FontAwesomeIcon icon={faShoppingCart} />
-          <div className="nav-login-cart-count">0</div>
+          <div id="cart">
+            <FontAwesomeIcon icon={faShoppingCart} />
+            <div className="nav-login-cart-count">0</div>
+          </div>
         </div>
       </div>
     </>

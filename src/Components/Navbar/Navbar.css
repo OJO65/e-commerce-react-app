@@ -20,12 +20,15 @@
 
 .title {
   color: #171717;
-  font-size: 44px;
+  font-size: 49px;
   font-weight: 600;
   font-family: "explora", cursive;
-  margin-right: 999px;
-  margin-top: 5px;
+  margin-right: 1030px;
   cursor: pointer;
+}
+
+#cart {
+  display: none;
 }
 
 .nav-login-cart {
@@ -44,8 +47,8 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  margin-top: -13px;
-  margin-left: -14px;
+  margin-top: -35px;
+  margin-left: 12px;
   margin-right: 2px;
   border-radius: 50%;
   font-size: 15px;
@@ -64,6 +67,7 @@
   margin-top: -3px;
   color: black;
   padding-left: 5px;
+  width: 100%;
 }
 
 @media (max-width: 768px) {

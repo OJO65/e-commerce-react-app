@@ -1,0 +1,31 @@
+.title {
+    text-align: center;
+    width: 100%;
+}
+
+.table {
+   border: 1px solid black;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: column;
+   height: 360px;
+}
+
+.tablecontent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+th {
+    padding: 0 56px 0 36px;
+}
+
+.rowgroup {
+    margin-top: -300px;
+}
+
+.bottomgroup {
+    border: 1px solid red;
+}
