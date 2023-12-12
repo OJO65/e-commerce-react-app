@@ -3,6 +3,7 @@ import "./Cart.css";
 const Cart = () => {
   return (
     <>
+    
       <div className="title">Your Cart</div>
       <div className="tablecontent">
         <table className="table">
@@ -15,6 +16,13 @@ const Cart = () => {
               <th>Remove</th>
             </tr>
           </thead>
+          <tfoot className="columngroup">
+            <tr>
+              <td>Promocode</td>
+              <td>Delivery Charges</td>
+              <td>Total</td>
+            </tr>
+          </tfoot>
         </table>
       </div>
     </>
