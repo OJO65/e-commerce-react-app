@@ -1,93 +1,93 @@
+import deskchair from "../Assets/img/desk chair.jpg";
+import coffeetable from "../Assets/img/coffee table.jpg";
+import receptionchair from "../Assets/img/reception chair.jpg";
+import reclinersofa from "../Assets/img/recliner sofa.jpg";
+import schooltable from "../Assets/img/school table.jpg";
+import chair from "../Assets/img/chair.jpg";
+import doublesofa from "../Assets/img/double sofa.avif";
+import officetable from "../Assets/img/office table.jpg";
+import singlesofa from "../Assets/img/single sofa.jpg";
+
 const productdata = [
   {
-    id: 1,
-    Title: "Product 1",
-    img: "./img/desk chair.jpg",
-    Price: 2500,
+    id: "deskChair",
+    name: "Desk Chair",
+    image: deskchair,
+    price: 2500,
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    cat: "chair",
   },
+
   {
-    id: 2,
-    Title: "Product 2",
-    img: "./img/coffee table.jpg",
-    Price: 1500,
+    id: "coffeeTable",
+    name: "Coffee Table",
+    image: coffeetable,
+    price: 1500,
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    cat: "table",
   },
+
   {
-    id: 3,
-    Title: "Product 3",
-    img: "./img/reception chair.jpg",
-    Price: 5500,
+    id: "receptionChair",
+    name: "Reception Chair",
+    image: receptionchair,
+    price: 5500,
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    cat: "chair",
   },
+
   {
-    id: 4,
-    Title: "Product 4",
-    img: "./img/recliner sofa.jpg",
-    Price: 90500,
+    id: "reclinerSofa",
+    name: "Recliner Sofa",
+    image: reclinersofa,
+    price: 90500,
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    cat: "chair",
   },
+
   {
-    id: 5,
-    Title: "Product 5",
-    img: "./img/school table.jpg",
-    Price: 26000,
+    id: "schoolTable",
+    name: "School Table",
+    image: schooltable,
+    price: 2600,
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    cat: "table",
   },
+
   {
-    id: 6,
-    Title: "Product 6",
-    img: "./img/chair.jpg",
-    Price: 2500,
+    id: "Chair",
+    name: "Chair",
+    image: chair,
+    price: 2500,
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    cat: "chair",
   },
+
   {
-    id: 7,
-    Title: "Product 7",
-    img: "./img/double sofa.avif",
-    Price: 30000,
+    id: "doubleSofa",
+    name: "Double Sofa",
+    image: doublesofa,
+    price: 30000,
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    cat: "chair",
   },
+
   {
-    id: 8,
-    Title: "Product 8",
-    img: "./img/office table.jpg",
-    Price: 4500,
+    id: "officeTable",
+    name: "Office Table",
+    image: officetable,
+    price: 4500,
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    cat: "table",
   },
+
   {
-    id: 9,
-    Title: "Product 9",
-    img: "./img/single sofa.jpg",
-    Price: 25500,
+    id: "singleSofa",
+    name: "Single Sofa",
+    image: singlesofa,
+    price: 25500,
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    cat: "chair",
-  },
-  {
-    id: 1,
-    Title: "Product 1",
-    img: "./img/desk chair.jpg",
-    Price: 2500,
-    Description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    cat: "chair",
   },
 ];
 

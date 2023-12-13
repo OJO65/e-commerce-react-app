@@ -3,7 +3,6 @@ import "./Cart.css";
 const Cart = () => {
   return (
     <>
-    
       <div className="title">Your Cart</div>
       <div className="tablecontent">
         <table className="table">
