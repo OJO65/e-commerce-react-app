@@ -49,3 +49,12 @@
 
 }
 
+.bottom-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    width: 50%;
+    align-items: center;
+    margin-left: 255px;
+}
+

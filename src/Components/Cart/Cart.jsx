@@ -24,6 +24,11 @@ const Cart = () => {
           </tfoot>
         </table>
       </div>
+      <div className="bottom-text">
+        <button>Clear Cart</button>
+        <button>Shop More</button>
+        <button>Check out</button>
+      </div>
     </>
   );
 };
