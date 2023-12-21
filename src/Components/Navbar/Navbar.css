@@ -3,7 +3,7 @@
   justify-content: space-between;
   box-shadow: 0 1px 3px -2px black;
   background-color: #f5f5f5;
-  margin: 15px;
+  margin: 5px;
   height: 60px;
 }
 
@@ -20,11 +20,12 @@
 
 .title {
   color: #171717;
-  font-size: 49px;
+  font-size: 46px;
   font-weight: 600;
   font-family: "explora", cursive;
   margin-right: 1030px;
   cursor: pointer;
+  
 }
 
 #cart {

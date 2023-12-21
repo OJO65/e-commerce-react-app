@@ -3,36 +3,34 @@ import "./Login.css";
 const Login = () => {
   return (
     <>
-      <div className="form-group">
-        <h1>Login</h1>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="email"
-          required
-        />
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="password"
-          required
-        />
-        <div className="button">
-          <button className="button">Login</button>
-        </div>
-        <div class="bottom-text">
-          <div>
+      <div className="login-container">
+        <div className="form-group">
+          <h1>Login</h1>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="password"
+            required
+          />
+          <button>Login</button>
+          <h2>
             <span>
-              No account? <a href="Signup">Sign up here</a>
+              No acount?<a href="Signup">Sign up here</a>
             </span>
-          </div>
-          <div>
+          </h2>
+          <h2>
             <span>
-              Forgot password? <a href="Forgotpassword">Reset password here</a>
+              Forgot Password?<a href="Forgotpassword">Reset Password</a>
             </span>
-          </div>
+          </h2>
         </div>
       </div>
     </>

@@ -1,13 +1,26 @@
+.login-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-left: 400px;
     width: 500px;
     height: 500px;
     gap: 35px;
     align-items: center;
-    box-shadow: 0 1px 3px -2px black;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 15px;
+}
 
+.form-group button {
+    width: 20%;
+    margin: 15px;
+    background: grey;
 }
 
 input {
@@ -17,10 +30,13 @@ input {
     font-size: 20px;
 }
 
-h1 {
+h2 {
     font-family: 'explora', cursive;
-    font-size: 45px;
-    margin-bottom: -20px;
+    font-size: 30px;
+    margin: 0;
+    transform: translateY(-50px);
+    margin-bottom: -40px;
+    font-weight: 500;
 }
 
 .button {
@@ -29,9 +45,8 @@ h1 {
     
 }
 
-.bottom-text {
-    font-family: 'explora', cursive;
-    font-size: 25px;
-    margin-top: -10px;
+a {
+    text-decoration: underline;
 }
+
 

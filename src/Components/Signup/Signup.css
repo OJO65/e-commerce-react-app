@@ -1,13 +1,6 @@
-.signup-group {
+.signup-container {
     display: flex;
-    flex-direction: column;
-    margin-left: 400px;
-    width: 500px;
-    height: 550px;
-    gap: 35px;
-    align-items: center;
-    box-shadow: 0 1px 3px -2px black;
-
+    justify-content: center;
 }
 
 input {
