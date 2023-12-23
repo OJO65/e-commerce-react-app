@@ -1,7 +1,8 @@
 import productdata from "./ProductData";
 import "./ProductDetail.css";
 import React, { useState } from "react";
-const ProductDetail = () => {
+
+const ProductDetail = ({ onAddToCart, onRemoveFromCart }) => {
   const [counters, setCounters] = useState({});
   const [cartCount, setCartCount] = useState(0);
 
@@ -11,6 +12,7 @@ const ProductDetail = () => {
       [productId]: Math.min((prevCounters[productId] || 0) + 1, 100),
     }));
     setCartCount((prevCount) => prevCount + 1);
+    onAddToCart(productId);
   };
 
   const decreaseCounter = (productId) => {
@@ -19,15 +21,16 @@ const ProductDetail = () => {
       [productId]: Math.max((prevCounters[productId] || 0) - 1, 0),
     }));
     setCartCount((prevCount) => Math.max(prevCount - 1, 0));
+    onRemoveFromCart(productId);
   };
 
-    const handleInputChange = (productId, event) => {
-      const inputValue = event.target.value;
-      setCounters((prevCounters) => ({
-        ...prevCounters,
-        [productId]: inputValue,
-      }));
-    };
+  const handleInputChange = (productId, event) => {
+    const inputValue = event.target.value;
+    setCounters((prevCounters) => ({
+      ...prevCounters,
+      [productId]: inputValue,
+    }));
+  };
 
   return (
     <div className="content">

@@ -33,7 +33,14 @@
   display: flex;
   margin-top: 15px;
   font-size: 20px;
+  
 }
+
+.nav-login-cart a {
+  text-decoration: none;
+  color: #171717;
+}
+
 
 .nav-login-cart-count {
   text-align: center;
@@ -44,15 +51,14 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  margin-top: -35px;
+  margin-top: -40px;
   margin-left: 12px;
   margin-right: 2px;
-  border-radius: 50%;
-  font-size: 15px;
-  transition: transform 0.2s ease-in-out;
+  border-radius: 22px;
+  font-size: 12px;
   background: #f44336;
   color: #fff;
-  overflow: hidden;
+  padding: 4px;
 }
 
 .login {

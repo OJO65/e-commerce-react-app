@@ -6,17 +6,7 @@ import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-const Navbar = () => {
-  const [cartCount, setCartCount] = useState(0);
-  const [cartItems, setCartItems] = useState({});
-
-  const handleAddToCart = (productId, quantity) => {
-    setCartCount((prevCount) => prevCount + quantity);
-    setCartItems((prevItems) => ({
-       ...prevItems,
-       [productId]: (prevItems[productId] || 0) + quantity 
-    }));
-  };
+const Navbar = ({ cartCount, onAddToCart }) => {
   return (
     <>
       <div className="navbar">
@@ -31,12 +21,14 @@ const Navbar = () => {
           <Link to={"/login"}>
             <div className="login">Log in</div>
           </Link>
-          <div id="cart">
-            <FontAwesomeIcon icon={faShoppingCart} />
-            {cartCount > 0 && (
-              <div className="nav-login-cart-count">{cartCount}</div>
-            )}
-          </div>
+          <Link to={"/cartpage"}>
+            <div id="cart" onClick={onAddToCart}>
+              <FontAwesomeIcon icon={faShoppingCart} />
+              {cartCount > 0 && (
+                <div className="nav-login-cart-count">{cartCount}</div>
+              )}
+            </div>
+          </Link>
         </div>
       </div>
     </>

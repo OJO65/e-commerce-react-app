@@ -1,6 +1,30 @@
 import React from "react";
 import "./Cart.css";
-const Cart = ({ cartItems }) => {
+import productdata from "../Product-detail/ProductData";
+
+const Cart = ({ cartItems, onClearCart, onShopMore, onCheckout }) => {
+  const calculateTotal = () => {
+    let total = 0;
+    Object.keys(cartItems).forEach((productId) => {
+      total +=
+        cartItems[productId] *
+        productdata.find((p) => p.id === productId).price;
+    });
+    return total;
+  };
+
+  const calculatePromocode = () => {
+    return "N/A";
+  };
+
+  const calculateDeliveryCharges = () => {
+    return "Ksh.0";
+  };
+
+  const total = calculateTotal();
+  const promocode = calculatePromocode();
+  const deliveryCharges = calculateDeliveryCharges();
+
   return (
     <>
       <div className="title">
@@ -35,32 +59,26 @@ const Cart = ({ cartItems }) => {
               <td className="footer-cell total">Promocode</td>
               <td className="footer-cell"></td>
               <td className="footer-cell"></td>
-              <td className="footer-cell total">N/A - Ksh.0</td>
+              <td className="footer-cell total">{promocode}</td>
             </tr>
             <tr className="footer-row">
               <td className="footer-cell total">Delivery Charges</td>
               <td className="footer-cell"></td>
               <td className="footer-cell"></td>
-              <td className="footer-cell total">Ksh.0</td>
+              <td className="footer-cell total">{deliveryCharges}</td>
             </tr>
             <tr className="footer-row">
               <td className="footer-cell total">Total</td>
               <td className="footer-cell"></td>
               <td className="footer-cell"></td>
-              <td className="footer-cell total">Ksh.0</td>
+              <td className="footer-cell total">{`Ksh. ${total}`}</td>
             </tr>
           </tfoot>
         </table>
         <div className="action-card">
-          <button className="action-btn" color="warn">
-            Clear Cart
-          </button>
-          <button className="action-btn" color="primary">
-            Shop More
-          </button>
-          <button className="action-btn" color="primary">
-            Check out
-          </button>
+          <button className="action-btn" onClick={onClearCart}>Clear Cart</button>
+          <button className="action-btn" onClick={onShopMore}>Shop More</button>
+          <button className="action-btn" onClick={onCheckout}>Check out</button>
         </div>
       </div>
     </>
