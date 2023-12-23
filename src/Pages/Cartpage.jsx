@@ -1,11 +1,12 @@
-import React from 'react'
-import Cart from '../Components/Cart/Cart'
+import React, { useState } from "react";
+import Cart from "../Components/Cart/Cart";
 const Cartpage = () => {
+  const [cartItems, setCartItems] = useState({});
   return (
     <div>
-      <Cart />
-      </div>
-  )
-}
+      <Cart cartItems={cartItems} />
+    </div>
+  );
+};
 
-export default Cartpage
+export default Cartpage;

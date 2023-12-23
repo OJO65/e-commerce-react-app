@@ -10,7 +10,13 @@ const Navbar = () => {
   const [cartCount, setCartCount] = useState(0);
   const [cartItems, setCartItems] = useState({});
 
-  const handleAddToCart = (productId, quantity) => {};
+  const handleAddToCart = (productId, quantity) => {
+    setCartCount((prevCount) => prevCount + quantity);
+    setCartItems((prevItems) => ({
+       ...prevItems,
+       [productId]: (prevItems[productId] || 0) + quantity 
+    }));
+  };
   return (
     <>
       <div className="navbar">
@@ -27,7 +33,9 @@ const Navbar = () => {
           </Link>
           <div id="cart">
             <FontAwesomeIcon icon={faShoppingCart} />
-            <div className="nav-login-cart-count">0</div>
+            {cartCount > 0 && (
+              <div className="nav-login-cart-count">{cartCount}</div>
+            )}
           </div>
         </div>
       </div>

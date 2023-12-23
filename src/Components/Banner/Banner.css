@@ -33,8 +33,7 @@ button {
 button:hover {
   background-color: #fff;
   color: #794328;
-  transform: scale(1.05);
-  transition: 0.4s;
+  
 }
 
 @media (max-width: 768px) {

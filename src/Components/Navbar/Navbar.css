@@ -10,11 +10,11 @@
 
 .navbar h3 {
   color: #171717;
-  font-size: 56px;
+  font-size: 66px;
   font-weight: 600;
   font-family: "explora", cursive;
   cursor: pointer;
-  transform: translate(-470px, -55px);
+  transform: translate(-450px, -75px);
 }
 
 .nav-logo img {
@@ -29,15 +29,10 @@
   transform: translateY(-12px);
 }
 
-#cart {
-  display: none;
-}
-
 .nav-login-cart {
   display: flex;
   margin-top: 15px;
   font-size: 20px;
-  gap: 5px;
 }
 
 .nav-login-cart-count {
