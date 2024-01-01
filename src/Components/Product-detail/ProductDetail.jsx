@@ -2,17 +2,14 @@ import productdata from "./ProductData";
 import "./ProductDetail.css";
 import React, { useState } from "react";
 
-const ProductDetail = ({ onAddToCart, onRemoveFromCart }) => {
+const ProductDetail = () => {
   const [counters, setCounters] = useState({});
-  const [cartCount, setCartCount] = useState(0);
 
   const increaseCounter = (productId) => {
     setCounters((prevCounters) => ({
       ...prevCounters,
       [productId]: Math.min((prevCounters[productId] || 0) + 1, 100),
     }));
-    setCartCount((prevCount) => prevCount + 1);
-    onAddToCart(productId);
   };
 
   const decreaseCounter = (productId) => {
@@ -20,8 +17,6 @@ const ProductDetail = ({ onAddToCart, onRemoveFromCart }) => {
       ...prevCounters,
       [productId]: Math.max((prevCounters[productId] || 0) - 1, 0),
     }));
-    setCartCount((prevCount) => Math.max(prevCount - 1, 0));
-    onRemoveFromCart(productId);
   };
 
   const handleInputChange = (productId, event) => {

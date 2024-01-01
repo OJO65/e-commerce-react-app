@@ -6,6 +6,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .title {
@@ -23,7 +24,8 @@
 .table {
     margin: 5px;
     width: 50%;
-    
+    border: 1px solid #ccc;
+    border-radius: 12px;
 }
 
 .header-row {

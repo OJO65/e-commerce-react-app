@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Navbar.css";
 import logo from "../Assets/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +12,7 @@ const Navbar = ({ cartCount, onAddToCart }) => {
       <div className="navbar">
         <Link to={"/Homepage"}>
           <div className="nav-logo">
-            <img src={logo} />
+            <img src={logo} alt={logo} />
           </div>
         </Link>
         <h3>Mbao Zetu</h3>
