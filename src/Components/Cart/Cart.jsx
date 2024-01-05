@@ -41,7 +41,6 @@ const Cart = ({ cartItems, onClearCart, onShopMore, onCheckout }) => {
               <th className="header-cell">Remove</th>
             </tr>
           </thead>
-          <hr />
           <tbody className="content">
             {Object.keys(cartItems).map((productId) => (
               <tr key={productId} className="row">
@@ -55,7 +54,6 @@ const Cart = ({ cartItems, onClearCart, onShopMore, onCheckout }) => {
               </tr>
             ))}
           </tbody>
-
           <tfoot>
             <tr className="footer-row">
               <td className="footer-cell total">Promocode</td>
@@ -63,14 +61,12 @@ const Cart = ({ cartItems, onClearCart, onShopMore, onCheckout }) => {
               <td className="footer-cell"></td>
               <td className="footer-cell total">{promocode}</td>
             </tr>
-            <hr />
             <tr className="footer-row">
               <td className="footer-cell total">Delivery Charges</td>
               <td className="footer-cell"></td>
               <td className="footer-cell"></td>
               <td className="footer-cell total">{deliveryCharges}</td>
             </tr>
-            <hr />
             <tr className="footer-row">
               <td className="footer-cell total">Total</td>
               <td className="footer-cell"></td>
@@ -80,15 +76,9 @@ const Cart = ({ cartItems, onClearCart, onShopMore, onCheckout }) => {
           </tfoot>
         </table>
         <div className="action-card">
-          <button className="action-btn" onClick={onClearCart}>
-            Clear Cart
-          </button>
-          <button className="action-btn" onClick={onShopMore}>
-            Shop More
-          </button>
-          <button className="action-btn" onClick={onCheckout}>
-            Check out
-          </button>
+          <button className="action-btn" onClick={onClearCart}>Clear Cart</button>
+          <button className="action-btn" onClick={onShopMore}>Shop More</button>
+          <button className="action-btn" onClick={onCheckout}>Check out</button>
         </div>
       </div>
     </>
