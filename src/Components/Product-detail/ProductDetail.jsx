@@ -1,4 +1,4 @@
-import productdata from "./ProductData";
+import productdata from "./all-product";
 import "./ProductDetail.css";
 import React, { useState } from "react";
 
