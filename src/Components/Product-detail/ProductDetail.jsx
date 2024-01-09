@@ -2,6 +2,7 @@ import productdata from "./all-product";
 import "./ProductDetail.css";
 import React, { useState } from "react";
 
+
 const ProductDetail = () => {
   const [counters, setCounters] = useState({});
 
@@ -67,5 +68,7 @@ const ProductDetail = () => {
     </div>
   );
 };
+
+
 
 export default ProductDetail;
