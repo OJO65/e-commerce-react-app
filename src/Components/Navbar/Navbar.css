@@ -14,7 +14,7 @@
   font-weight: 600;
   font-family: "explora", cursive;
   cursor: pointer;
-  transform: translate(-480px, -75px);
+  transform: translate(-450px, -75px);
 }
 
 .nav-logo img {
@@ -36,15 +36,10 @@
   
 }
 
-#cart {
-  display: none;
-}
-
 .nav-login-cart a {
   text-decoration: none;
   color: #171717;
 }
-
 
 
 .nav-login-cart-count {
