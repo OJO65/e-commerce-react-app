@@ -2,13 +2,18 @@ import React from "react";
 import PropTypes from "prop-types";
 import productdata from "./all-product"
 import "./ProductItem.css";
+import nocart from '../Assets/img/no-cart.svg';
 
 const ProductItem = ({ id }) => {
 
-  const product = productdata.find((product) => product.id === id);
+  const product = productdata.find((product) => product === id);
   
   if (!product) {
-    return ("no product is selected");
+    return (
+      <>
+      <img src={nocart} />
+      </>
+    );
   }
 
   const { name, image, price, Description } = product;
