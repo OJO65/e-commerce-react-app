@@ -15,7 +15,7 @@ const Navbar = ({ cartCount, onAddToCart }) => {
             <img src={logo} alt={logo} />
           </div>
         </Link>
-        <h3>Mbao Zetu</h3>
+        <h1>Mbao Zetu</h1>
         <div className="nav-login-cart">
           <FontAwesomeIcon icon={faUser} />
           <Link to={"/login"}>

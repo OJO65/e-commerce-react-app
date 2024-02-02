@@ -8,13 +8,13 @@
   height: 65px;
 }
 
-.navbar h3 {
+.navbar h1 {
   color: #171717;
   font-size: 66px;
   font-weight: 600;
   font-family: "explora", cursive;
   cursor: pointer;
-  transform: translate(-450px, -75px);
+  transform: translate(-470px, -50px);
 }
 
 .nav-logo img {
