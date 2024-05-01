@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
-import { BrowserRouter, Routes, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Redirect } from "react-router-dom";
 import LoginSignup from "./Pages/LoginSignup";
 import Product from "./Pages/Product";
 import Cartpage from "./Pages/Cartpage";
@@ -8,6 +8,7 @@ import Homepage from "./Pages/Homepage";
 import Checkout from "./Pages/Checkout";
 import Signup from "./Components/Signup/Signup";
 import Forgotpassword from "./Components/Forgot-password/Forgotpassword";
+import NotFound from "./NotFound";
 
 function App() {
   return (
@@ -24,7 +25,9 @@ function App() {
           <Route path="/Checkout" element={<Checkout />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Forgotpassword" element={<Forgotpassword />} />
+          <Route path="/NotFound" element={<NotFound />} />
         </Routes>
+        
       </BrowserRouter>
     </div>
   );

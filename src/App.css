@@ -2,3 +2,23 @@
   font-family: explora;
   src: url(../public/Explora-Regular.ttf);
 }
+
+.not-found{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(68,68,68);
+  min-height: 80vh;
+}
+
+.not-found h2 {
+  font-size: 75px;
+  font-weight: 900;
+}
+
+.not-found p {
+  font-size: 20px;
+  transform: translateY(-40px);
+}
+
