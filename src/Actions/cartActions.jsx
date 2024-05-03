@@ -1,4 +1,4 @@
-export const addToCart = (product) => ({
+export const addToCart = (productId) => ({
     type: "ADD_TO_CART",
     payload: product,
 });

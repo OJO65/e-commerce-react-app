@@ -2,7 +2,7 @@ import productdata from "./all-product";
 import "./ProductDetail.css";
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addToCart } from './actions/cartActions';
+
 
 
 const ProductDetail = () => {
