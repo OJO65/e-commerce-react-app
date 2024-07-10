@@ -1,7 +1,6 @@
 import productdata from "./all-product";
 import "./ProductDetail.css";
 import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
 
 
 

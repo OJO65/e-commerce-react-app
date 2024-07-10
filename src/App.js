@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
-import { BrowserRouter, Routes, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginSignup from "./Pages/LoginSignup";
 import Product from "./Pages/Product";
 import Cartpage from "./Pages/Cartpage";
@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/Homepage" element={<Homepage />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/Product" element={<Product />}>
             <Route path="productId" element={<Product />} />
           </Route>

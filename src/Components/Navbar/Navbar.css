@@ -6,18 +6,25 @@
   margin: 8px;
   padding: 5px;
   height: 65px;
+  
 }
 
 .navbar h1 {
   color: #171717;
+  height: 65px;
+  padding: 5px;
   font-size: 66px;
   font-weight: 600;
   font-family: "explora", cursive;
   cursor: pointer;
-  transform: translate(-930px, -70px);
+  margin-top: -10px;
 }
 
-.nav-logo img {
+.nav-left {
+  display: flex;
+}
+
+.nav-left img {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -29,56 +36,36 @@
   transform: translateY(-12px);
 }
 
-.nav-login-cart {
+.nav-right {
   display: flex;
-  justify-content: center;
-  margin-top: 15px;
   font-size: 20px;
-  
-  
+  justify-content: space-between;
 }
 
-.nav-login-cart a {
+.nav-right a {
   text-decoration: none;
+  margin: 5px;
+}
+
+.icon {
+  padding: 2px;
+  margin: 5px;
+}
+
+.nav-right h1 {
+  font-size: 30px;
+}
+
+.cart {
+  margin: 5px;
   color: #171717;
 }
 
-#cart {
-  margin-right: 5px;
-  margin-top: 3px;
+.count {
+  border: 1px solid red;
+  font-size: large;
 }
 
-.nav-login-cart-count {
-  text-align: center;
-  width: 15px;
-  height: 15px;
-  display: flex;
-  font-weight: 600;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  margin-top: -40px;
-  margin-left: 12px;
-  margin-right: 2px;
-  border-radius: 22px;
-  font-size: 12px;
-  background: #f44336;
-  color: #fff;
-  padding: 4px;
-}
-
-.login {
-  font-family: "explora";
-  font-size: 28px;
-  text-decoration: underline;
-  font-weight: lighter;
-  margin-right: 25px;
-  margin-top: -3px;
-  color: black;
-  padding-left: 5px;
-  width: 100%;
-  transform: translateY(-4px);
-}
 
 @media (max-width: 768px) {
   .navbar {
