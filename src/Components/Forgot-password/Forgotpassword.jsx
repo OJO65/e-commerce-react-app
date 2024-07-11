@@ -13,16 +13,20 @@ const Forgotpassword = () => {
             placeholder="Reset Password"
           />
           <button>Send reset password link</button>
-          <h2>
-            <span>
-              Have an acount?<a href="Login">Login here</a>
-            </span>
-          </h2>
-          <h2>
-            <span>
-              No Account?<a href="signup">Signup here</a>
-            </span>
-          </h2>
+          <div className="btm">
+            <div className="btm-row">
+              <h2>Have an acount?</h2>
+              <span>
+                <a href="Login">Login here</a>
+              </span>
+            </div>
+            <div className="btm-row">
+              <h2>No Account?</h2>
+              <span>
+                <a href="signup">Signup here</a>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </>

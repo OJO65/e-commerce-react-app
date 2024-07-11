@@ -13,7 +13,7 @@
   color: #171717;
   height: 65px;
   padding: 5px;
-  font-size: 66px;
+  font-size: 56px;
   font-weight: 600;
   font-family: "explora", cursive;
   cursor: pointer;
@@ -40,16 +40,20 @@
   display: flex;
   font-size: 20px;
   justify-content: space-between;
+  height: 40px;
+  margin-top: 10px;
 }
 
 .nav-right a {
   text-decoration: none;
   margin: 5px;
+  
 }
 
 .icon {
   padding: 2px;
   margin: 5px;
+  transform: translateX(15px);
 }
 
 .nav-right h1 {
@@ -59,11 +63,6 @@
 .cart {
   margin: 5px;
   color: #171717;
-}
-
-.count {
-  border: 1px solid red;
-  font-size: large;
 }
 
 

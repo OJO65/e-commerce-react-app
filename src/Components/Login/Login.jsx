@@ -21,16 +21,20 @@ const Login = () => {
             required
           />
           <button>Login</button>
-          <h2>
+          <div className="btm">
+            <div className="btm-row">
+            <h2>No acount?</h2>
             <span>
-              No acount?<a href="Signup">Sign up here</a>
+              <a href="Signup">Sign up here</a>
             </span>
-          </h2>
-          <h2>
+            </div>
+            <div className="btm-row">
+            <h2>Forgot Password?</h2>
             <span>
-              Forgot Password?<a href="Forgotpassword">Reset Password</a>
+              <a href="Forgotpassword">Reset Password</a>
             </span>
-          </h2>
+            </div>
+          </div>
         </div>
       </div>
     </>

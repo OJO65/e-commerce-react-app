@@ -53,13 +53,13 @@
 
 .minus {
   border: 1px solid red;
-  padding: 0 15px 5px 15px;
+  padding: 5px 15px 5px 15px;
   border-radius: 5px;
 }
 
 .counter-value {
   border: 1px solid grey;
-  padding: 0 15px 5px 15px;
+  padding: 5px 15px 5px 15px;
   border-radius: 5px;
   width: 10%;
   text-align: center;
@@ -67,7 +67,7 @@
 
 .plus {
   border: 1px solid rgb(90, 86, 224);
-  padding: 0 15px 5px 15px;
+  padding: 5px 15px 5px 15px;
   border-radius: 5px;
 }
 

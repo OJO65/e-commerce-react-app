@@ -1,6 +1,7 @@
 .banner {
   display: flex;
   justify-content: space-evenly;
+  height: 80vh;
 }
 
 .banner-left {
@@ -14,11 +15,14 @@
 }
 
 .banner-right {
-  width: 70%;
+  width: 50%;
   margin-top: 100px;
-  transform: translateX(100px);
+}
 
-
+.banner-right img {
+  height: 150%;
+  margin-top: -150px;
+  padding-left: 100px;
 }
 
 button {
